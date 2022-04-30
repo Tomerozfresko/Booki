@@ -345,7 +345,7 @@ input {
 
 .short-image-1 {
   width: 300px;
-  height: 160px;
+  height: 360px;
   object-fit: cover;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -359,7 +359,8 @@ input {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   display: block;
-  height: 160px;
+  width: 300px;
+  height: 360px;
 }
 #frioulisland {
   margin-top: 40px;
@@ -408,7 +409,6 @@ input {
   display: flex;
   text-align: justify;
   text-justify: distribute;
-  display: none;
 }
 
 ul {
