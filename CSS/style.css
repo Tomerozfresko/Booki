@@ -304,22 +304,9 @@ input {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  border: 1px solid;
 }
 
-/* Card-container */
-
-.Act-card-container {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 300px;
-  border-radius: 5px;
-  height: 400px;
-}
-
-.Act-card-container:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
+/* long activity */
 
 .Act-long {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -328,12 +315,6 @@ input {
   border-radius: 5px;
   height: 400px;
 }
-
-.Act-long:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-/* Images */
 
 .long {
   width: 300px;
@@ -344,30 +325,81 @@ input {
   display: block;
 }
 
-.short1 {
-  width: 100%;
+.Act-long:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Short--activities */
+
+.Act-short-1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  display: block;
+}
+
+.Act-short-1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.short-image-1 {
+  width: 300px;
   height: 160px;
   object-fit: cover;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   display: block;
 }
+/* Short--activity--2 */
 
-.short2 {
+.Act-short-2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  display: block;
+  height: 160px;
+}
+#frioulisland {
+  margin-top: 40px;
+}
+
+#notredame {
+  margin-bottom: 40px;
+}
+
+.Act-short-2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.short-image-2 {
   width: 100%;
   height: 120px;
   object-fit: cover;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   display: block;
-  margin-top: 40px;
 }
 
-/* Text */
+#2 {
+  background-color: red;
+}
 
-.Act-card-container p {
+/* Activity-Title */
+
+.activity-title {
+  display: flex;
+  align-items: center;
+  height: 40px;
   font-size: 14px;
   font-weight: 400px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.activity-title p {
+  margin-left: 10px;
 }
 
 /* <!-- Footer  --> */
