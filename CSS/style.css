@@ -216,6 +216,7 @@ input {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin: auto;
 }
 
 .accomodation-cards-container {
