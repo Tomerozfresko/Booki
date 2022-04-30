@@ -32,33 +32,37 @@
     </form>
     
     <!-- Filters  -->  
-    <div class="wrapper">
-        <span id="filters">Filters</span>  
-        <label>
-            <input type="checkbox" name="" id="">  
+    <div class="filters-container">
+        <div class="filter-text"> 
+            <p>Filters</p>
+        </div>
+        
+        <div class="filter-button">
+            <input type="checkbox">  
             <i class="fa-solid fa-money-bill-wave"></i>          
-            <span>Low Cost</span>  
-        </label>
-        <label>
-            <input type="checkbox" name="" id="">  
+            <h5>Low Cost</h5>  
+        </div>
+        <div class="filter-button">
+            <input type="checkbox">  
             <i class="fa-solid fa-person"></i>          
-            <span>Family-friendly</span>
-        </label>
-        <label>
-            <input type="checkbox" name="" id="">  
+            <h5>Family-friendly</h5>
+        </div>
+        <div class="filter-button">
+            <input type="checkbox">  
             <i class="fa-solid fa-heart"></i>
-            <span>Romantic</span>
-        </label>
-        <label>
-            <input type="checkbox" name="" id="">  
+            <h5>Romantic</h5>
+        </div>
+        <div class="filter-button">
+            <input type="checkbox">  
             <i class="fa-solid fa-dog"></i>
-            <span>Pets allowed</span>
-        </label>
+            <h5>Pets allowed</h5>
+        </div>
     </div>
     <!-------- Quote--------->
-    <span id="icon" class="fa-solid fa-circle-info"></span>
-    <span id="quote" >More then 500 Accommodations are availaible in this city</span>
-    
+    <div class="quote-container">
+        <span id="icon" class="fa-solid fa-circle-info"></span>
+        <span id="quote" >More then 500 Accommodations are availaible in this city</span>
+    </div>
     <!-- Cards Flex Zone-------------->    
     <div class="cardszone">
         <div class="accommodations-in-marseille">
@@ -212,26 +216,35 @@
     </div>
     
     
-    
-    
+    <div class="acitivities-title">
+        <p>
+            Activities in Marseille
+        </p>  
+    </div>
+ 
     
     
     <!-- Activities in Marseille  -->
-    <div class="activities_zone">
-        <h2>
-            Activities in Marseille
-        </h2>
         
         <div class="activities_container">  
-            <div class="Act-card-container">
+            <div class="Act-long">
                 <img class="long" src="Images/images/activites/3_medium/OldPort.jpg" alt="Avatar">
-                <p>Old Port</p>
+                <div class="activity-title">
+                    <p>Old Port</p>
+                </div> 
             </div>
+
+            
             <div class="Act-card-container">       
                 <img class="short1" src="Images/images/activites/3_medium/PomegeuesFort.jpg" alt="Avatar">
+               <div class="activity-title">
                 <p>Pomégues Fort</p>
-                <img class="short2" src="Images/images/activites/3_medium/FrioulIsland.jpg" alt="Avatar">
+               </div> 
+                
+               <!-- <img class="short2" src="Images/images/activites/3_medium/FrioulIsland.jpg" alt="Avatar">
+               <div class="activity-title">
                 <p>Frioul Island</p>
+               </div>   -->
             </div>  
             <div class="Act-card-container">
                 <img class="long" src="Images/images/activites/3_medium/calanques.jpg" alt="Avatar">
@@ -245,7 +258,7 @@
                 <img class="short1" src="Images/images/activites/3_medium/LongChampsPArk.jpg" alt="Avatar">
                 <p>Longchamp Park</p>
             </div> 
-        </div>    
+    </div>    
         
         <footer class="footer">
             <div class="footer-container">
