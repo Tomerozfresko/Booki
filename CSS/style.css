@@ -448,3 +448,11 @@ ul {
   color: red;
   padding-left: 8px;
 }
+
+/* responsive */
+
+@media all and (max-device-width: 480px) {
+  body {
+    background-color: red;
+  }
+}
