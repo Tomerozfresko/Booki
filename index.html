@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booki</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="CSS\style.css">
+    <script src="https://kit.fontawesome.com/6b2e6b6c97.js" crossorigin="anonymous"></script>
+</head>
+<body>    
+    <header>
+        <img class="logo" src="Images\images\logo\Booki.png" alt="Booki Logo">
+        <nav>
+            <ul class="navlinks">
+                <li><a href="#">Accommodations</a></li>
+                <li><a href="#">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--Titles-->
+    <h2 class="firsttitle"> Find a place for your dream vacation (H2)</h2>
+    <h3>Downtown or in nature (H3)</h3>
+    
+    <!-- Searchbox  -->    
+    <form class="searchzone">
+        <i id="pinicon" class="fa-solid fa-location-pin"></i>
+        <input class="input" type="text" placeholder="Marseille,France">
+        <button class="searchbutton">Search</button>
+    </form>
+    
+    <!-- Filters  -->  
+    <div class="wrapper">
+        <span id="filters">Filters</span>  
+        <label>
+            <input type="checkbox" name="" id="">  
+            <i class="fa-solid fa-money-bill-wave"></i>          
+            <span>Low Cost</span>  
+        </label>
+        <label>
+            <input type="checkbox" name="" id="">  
+            <i class="fa-solid fa-person"></i>          
+            <span>Family-friendly</span>
+        </label>
+        <label>
+            <input type="checkbox" name="" id="">  
+            <i class="fa-solid fa-heart"></i>
+            <span>Romantic</span>
+        </label>
+        <label>
+            <input type="checkbox" name="" id="">  
+            <i class="fa-solid fa-dog"></i>
+            <span>Pets allowed</span>
+        </label>
+    </div>
+    <!-------- Quote--------->
+    <span id="icon" class="fa-solid fa-circle-info"></span>
+    <span id="quote" >More then 500 Accommodations are availaible in this city</span>
+    
+    <!-- Cards Flex Zone-------------->    
+    <div class="cardszone">
+        <div class="accommodations-in-marseille">
+            <h2>Accommodations in Marseille (H2) </h2>
+            <!-- Accommodations-------------->    
+            <div class=accomodation-cards-container>
+                <div class="accomodation">
+                    <img src="Images/images/hebergements/3_medium/AubergeCannBiere.jpg"alt="Auberge la Cannebiere">
+                    <h3>Auberge la Cannebiere (H3)</h3>
+                    <h4>night starting at 25€ </h4>
+                    <div class="starswrap">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>                    
+                </div>
+                
+                <div class="accomodation">
+                    <img src="Images/images/hebergements/4_small/HotelDuPort.jpg" alt="Hotel du Port">
+                    
+                    <h3>Hotel du Port</h3>
+                    <h4>night starting at 52€</h4>
+                    <div class="starswrap">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    
+                </div>
+                
+                <div class="accomodation">
+                    <img src="Images/images/hebergements/3_medium/LesMouttes.jpg"alt="Les mouttes Hotel">
+                    
+                    <h3>Les mouttes Hotel</h3>
+                    <h4>night starting at 75€</h4>
+                    <div class="starswrap">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    
+                </div>
+                
+                <div class="accomodation">
+                    <img src="Images/images/hebergements/4_small/HotelDeLaMere.jpg" alt="Hotel de la mer">
+                    
+                    <h3>Hotel de la mer</h3>
+                    <h4>night starting at 46€</h4>
+                    <div class="starswrap">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    
+                </div>
+                
+                <div class="accomodation">
+                    <img src="Images/images/hebergements/3_medium/AubergeLePannnier.jpg" alt="Auberge le Pannier">
+                    
+                    <h3>Auberge le Pannier</h3>
+                    <h4>night starting at 23€</h4>
+                    <div class="starswrap">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    
+                </div>
+                
+                <div class="accomodation">
+                    <img src="Images/images/hebergements/3_medium/ChezAmina.jpg" alt="Hotel chez Amina">
+                    
+                    <h3>Hotel chez Amina</h3>
+                    <h4>night starting at 96€</h4>
+                    <div class="starswrap">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    
+                </div>
+            </div>
+            <h2 id="showmore">Show More (H2)</h2>
+        </div>
+        
+        <!-- Most Popular -->
+        <div class="cardszoneright">
+            <h2>Most Popular (H2)</h2>
+            <div class=cardsright>
+                <div class="accomright">
+                    <img src="Images/images/hebergements/4_small/MorningSun.jpg"
+                    alt="Morning Sun Hotel">
+                    <div class="textright">
+                        <h3>Morning Sun Hotel</h3>
+                        <h4>night starting at 128€</h4>
+                        <div class="starswrap">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accomright">
+                    <img src="Images/images/hebergements/3_medium/AuCoeurDeleau.jpg"
+                    alt="Space Holder">
+                    <div class="textright">
+                        <h3>Au Coeur de l'eau Bed and Breakfast</h3>
+                        <h4>night starting at 71€</h4>
+                        <div class="starswrap">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accomright">
+                    <img src="Images/images/hebergements/4_small/ToutbleuetBlancHotel.jpg"
+                    alt="Tout bleu et Blanc Hotel">
+                    <div class="textright">
+                        <h3>Tout bleu et Blanc Hotel</h3>
+                        <h4>night starting at 68€</h4>
+                        <div class="starswrap">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    <!-- Activities in Marseille  -->
+    <div class="activities_zone">
+        <h2>
+            Activities in Marseille
+        </h2>
+        
+        <div class="activities_container">  
+            <div class="Act-card-container">
+                <img class="long" src="Images/images/activites/3_medium/OldPort.jpg" alt="Avatar">
+                <p>Old Port</p>
+            </div>
+            <div class="Act-card-container">       
+                <img class="short1" src="Images/images/activites/3_medium/PomegeuesFort.jpg" alt="Avatar">
+                <p>Pomégues Fort</p>
+                <img class="short2" src="Images/images/activites/3_medium/FrioulIsland.jpg" alt="Avatar">
+                <p>Frioul Island</p>
+            </div>  
+            <div class="Act-card-container">
+                <img class="long" src="Images/images/activites/3_medium/calanques.jpg" alt="Avatar">
+                <p>Calanques National Park</p>
+            </div>     
+            
+            
+            <div class="Act-card-container">        
+                <img class="short2" src="Images/images/activites/3_medium/NotreDameDeLaGare.jpg" alt="Avatar">
+                <p>Notre-Dame-de-La-Gare</p>
+                <img class="short1" src="Images/images/activites/3_medium/LongChampsPArk.jpg" alt="Avatar">
+                <p>Longchamp Park</p>
+            </div> 
+        </div>    
+        
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">Site Map</a></li>
+                            <li><a href="#">General Terms and Conditions</a></li>
+                            <li><a href="#">Data and Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Our Accommodations</h4>
+                        <ul>
+                            <li><a href="#">Quality Assessment</a></li>
+                            <li><a href="#">You have a hotel?</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Assistance</h4>
+                        <ul>
+                            <li><a href="#">Hel Desk</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+        
+        
+        
+        
+        
+    </body>
+    
+    
+    </html>
+    
+    
