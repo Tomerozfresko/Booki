@@ -166,6 +166,7 @@ input {
   position: relative;
   left: 20px;
   bottom: 1px;
+  border: 1px solid;
 }
 
 #filters {
