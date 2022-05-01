@@ -1,155 +1,23 @@
-/* responsive -----------------------------------------------------------------------------------*/
-
-/* --------------* and---------Body--------------------------------- */
-body {
-  margin: 5px;
-  background-color: #0065fc;
-}
-/* -----------------------Fonts--------------------------------- */
-
-h2 {
-  color: black;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-h3 {
-  font-weight: 300;
-  color: red;
-  font-size: 14px;
-  /* font-weight: bold; */
-}
-
-h4 {
-  font-weight: 200;
-  color: grey;
-  font-size: 12px;
-}
-
-/* -----------------------Header--------------------------------- */
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.logo {
-  cursor: pointer;
-  height: 40px;
-}
-
-.navlinks li a:hover {
-  padding-top: 20px;
-  border-bottom: 2px solid blue;
-  border-top: none;
-}
-
-/* -----------------------Search--Bar--------------------------------- */
-.searchzone {
-  display: flex;
-  margin: 10px 0px;
-}
-
-#pinicon {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  width: 100px;
-  height: 50px;
-  display: grid;
-  align-items: center;
-
-  color: black;
-  line-height: 30px;
-  text-align: center;
-}
-
-.searchbutton {
-  background-color: blue;
-  color: white;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-style: none;
-  width: 100px;
-}
-
-input {
-  padding: 5px;
-  border: 1px solid lightgrey;
-  border-right: none;
-  border-left: none;
-  width: 200px;
-}
-
-::placeholder {
-  color: grey;
-  font-size: 18px;
-  font-weight: 100;
-}
-
-/* -----------------------Title----------------- */
-.firsttitle {
-  margin-bottom: 10px;
-}
 /* -----------------------Filters Zone----------------- */
 
 .filters-container {
-  /* border: 5px solid; */
-
   display: flex;
   flex-direction: row;
-
-  max-width: 300px;
-  margin: 10px auto;
-  justify-content: center;
-  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .filters-container h5 {
-  margin-right: 0px;
-  cursor: pointer;
-  width: 90px;
-  height: 50px;
-  padding: 0px 15px;
-  text-align: center;
-  border: 2px solid;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-radius: 5px;
-  overflow: hidden;
-  display: grid;
-  align-items: center;
-}
-
-.filters-container i {
-  font-size: 14px;
-  padding: 5px 0px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 20px 5px 30px;
   border: 1px solid lightgray;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  background-color: #deebff;
-  color: #0065fc;
-  text-align: center;
-  position: relative;
-  border: 1px solid;
-  left: 10px;
-  display: grid;
-  align-items: center;
-}
-
-.filter-text {
-  display: flex;
-  align-items: left;
-  margin-right: 0px;
-  margin-bottom: 10px;
-  display: none;
-}
-
-.filter-button {
-  padding: 5px;
+  border-left: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .filters-container span:hover {
@@ -161,12 +29,55 @@ input {
   background-color: #0065fc;
 }
 
+.filters-container i {
+  font-size: 16px;
+  padding: 5px 0px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #deebff;
+  color: #0065fc;
+  text-align: center;
+  position: relative;
+  border: 1px solid;
+  left: 10px;
+}
+
+.filter-text {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+}
+.filters-container input {
+  display: none;
+}
+
 /* -----------------------Quote----------------- */
 
+.quote-container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 5px;
+}
+
+#quote {
+  padding: 5px;
+}
+
+#icon {
+  padding: 5px;
+  color: #0065fc;
+}
 /* -----------------------Cards Flex Zone----------------- */
 .cardszone {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -176,21 +87,21 @@ input {
 }
 
 .cardszone h2 {
-  text-align: center;
-  font-size: 16px;
+  margin: 20px 0px 20px 20px;
+  font-weight: 600;
 }
 
 /* -----------------------Accommodations in Marseille----------------- */
 
 .accommodations-in-marseille {
   background-color: #f2f2f2;
+  min-width: 300px;
+  max-width: 900px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-self: flex-start;
-  margin-bottom: 20px;
-  width: 380px;
 }
 
 .accomodation-cards-container {
@@ -199,7 +110,6 @@ input {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .accomodation {
@@ -233,9 +143,13 @@ input {
   flex-direction: column;
   background-color: #f2f2f2;
   border-radius: 15px;
-  width: 380px;
+  margin-top: 20px;
 }
 
+.cardsright {
+  display: flex;
+  flex-wrap: wrap;
+}
 .accomright {
   display: flex;
   flex-direction: row;
@@ -267,8 +181,7 @@ input {
 
 /* <!-- Activities in Marseille  --> */
 .acitivities-title {
-  text-align: center;
-  font-size: 16px;
+  margin: 20px 0px;
 }
 
 .activities_container {
@@ -277,7 +190,6 @@ input {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 /* long activity */
@@ -288,7 +200,6 @@ input {
   width: 300px;
   border-radius: 5px;
   height: 400px;
-  margin-top: 20px;
 }
 
 .long {
@@ -312,7 +223,6 @@ input {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   display: block;
-  margin-top: 20px;
 }
 
 .Act-short-1:hover {
@@ -321,7 +231,7 @@ input {
 
 .short-image-1 {
   width: 300px;
-  height: 360px;
+  height: 160px;
   object-fit: cover;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -335,15 +245,15 @@ input {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   display: block;
-  height: 400px;
-  margin-top: 20px;
+  width: 300px;
+  height: 160px;
 }
 #frioulisland {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 #notredame {
-  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .Act-short-2:hover {
@@ -351,8 +261,8 @@ input {
 }
 
 .short-image-2 {
-  width: 300px;
-  height: 360px;
+  width: 100%;
+  height: 120px;
   object-fit: cover;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -379,15 +289,50 @@ input {
   margin-left: 10px;
 }
 
+/* <!-- Footer  --> */
+
+.row {
+  display: flex;
+  text-align: justify;
+  text-justify: distribute;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #f2f2f2;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
 .footer-col h4 {
-  font-size: 14px;
+  font-size: 18px;
   color: black;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  font-weight: 400;
-  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  font-weight: 500;
+  position: relative;
 }
 
 .footer-col ul li {
-  display: none;
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  color: red;
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+  display: block;
+}
+
+.footer-col ul li a:hover {
+  color: red;
+  padding-left: 8px;
 }
