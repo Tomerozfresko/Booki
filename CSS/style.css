@@ -30,18 +30,15 @@ body {
 h2 {
   font-size: 16px;
   font-weight: bold;
-  color: olive;
 }
 
 h3 {
-  color: red;
   font-size: 14px;
   font-weight: bold;
 }
 
 h4 {
   font-weight: 200;
-  color: coral;
   font-size: 12px;
 }
 
@@ -205,8 +202,8 @@ input {
   padding: 5px;
   color: #0065fc;
 }
-/* -----------------------Cards Flex Zone----------------- */
-.cardszone {
+/* -----------------------Main----------------- */
+main {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -217,29 +214,26 @@ input {
   font-size: 10px;
 }
 
-.cardszone h2 {
+main h2 {
   margin: 20px 0px 20px 20px;
-  font-weight: 600;
 }
 
-/* -----------------------Accommodations in Marseille----------------- */
+/* --Accommodations in Marseille--------------- */
 
 .accommodations-in-marseille {
   background-color: #f2f2f2;
-  min-width: 300px;
-  max-width: 900px;
   border-radius: 15px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  align-self: flex-start;
+  width: 66%;
 }
 
 .accomodation-cards-container {
   margin: 5px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -249,7 +243,7 @@ input {
   background-color: white;
   display: flex;
   flex-direction: column;
-  padding: 2px;
+  padding: 4px;
   margin: 15px;
   border-radius: 5px;
   justify-content: space-between;
@@ -269,11 +263,20 @@ input {
 
 /* ----------------------- Most Popular----------------- */
 
-.cardszoneright {
+.Most-Popular {
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
   border-radius: 15px;
+  width: 33%;
+}
+
+.cardsright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 90%;
 }
 
 .accomright {
@@ -283,7 +286,7 @@ input {
   width: 330px;
   border-radius: 5px;
   background-color: white;
-  margin: 20px;
+  padding: 4px;
 }
 
 .accomright:hover {
@@ -292,7 +295,7 @@ input {
 
 .accomright img {
   border-radius: 5px;
-  width: 170px;
+  width: 200px;
   height: 100%;
   object-fit: cover;
 }
@@ -303,6 +306,7 @@ input {
   justify-content: space-between;
   padding: 5px;
   max-height: 100%;
+  width: 30%;
 }
 
 /* <!-- Activities in Marseille  --> */
@@ -411,8 +415,10 @@ input {
   border-bottom-left-radius: 5px;
 }
 
-.activity-title p {
+.activity-title h3 {
   margin-left: 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 /* <!-- Footer  --> */
