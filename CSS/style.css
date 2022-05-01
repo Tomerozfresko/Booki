@@ -136,7 +136,7 @@ input {
   flex-wrap: wrap;
 }
 
-.filters-container h5 {
+.filters-container label {
   font-size: 16px;
   font-weight: bold;
   padding: 5px 20px 5px 30px;
@@ -153,8 +153,10 @@ input {
   transition: 0.3s;
 }
 
-.filters-container input:checked ~ span {
-  background-color: #0065fc;
+.filters-container input:checked ~ i {
+  background-color: blue;
+  border: 2px solid white;
+  color: white;
 }
 
 .filters-container i {
