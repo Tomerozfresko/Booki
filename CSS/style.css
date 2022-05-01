@@ -451,6 +451,8 @@ ul {
   padding-left: 8px;
 }
 
+
+
 /* responsive -----------------------------------------------------------------------------------*/
 
 @media all and (max-device-width: 480px) {
@@ -500,7 +502,49 @@ ul {
   }
 
   /* -----------------------Search--Bar--------------------------------- */
+  .searchzone {
+    display: flex;
+    margin: 10px 0px;
+  }
+  
+  #pinicon {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 100px;
+    height: 50px;
+    display: grid;
+    align-items: center;
+    
+    color: black;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .searchbutton {
+    background-color: blue;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: none;
+    width: 100px;
 
+  }
+  
+  input {
+    padding: 5px;
+    border: 1px solid lightgrey;
+    border-right: none;
+    border-left: none;
+    width: 200px;
+
+  }
+  
+  ::placeholder {
+    color: grey;
+    font-size: 18px;
+    font-weight: 100;
+  }
+  
   /* -----------------------Title----------------- */
   .firsttitle {
     margin-bottom: 10px;
@@ -508,20 +552,39 @@ ul {
   /* -----------------------Filters Zone----------------- */
 
   .filters-container {
-    flex-direction: column;
+    /* border: 5px solid; */
+    
+    display: flex;
+    flex-direction: row;
+    
+    max-width: 300px;
+    margin: 10px auto;
+    justify-content: center;
     align-items: center;
+
+
   }
 
   .filters-container h5 {
     margin-right: 0px;
     cursor: pointer;
-    width: 150px;
+    width: 90px;
+    height: 50px;
     padding: 0px 15px;
     text-align: center;
+    border: 2px solid;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: grid;
+    align-items: center;
+
+
   }
 
   .filters-container i {
-    font-size: 16px;
+    font-size: 14px;
     padding: 5px 0px;
     border: 1px solid lightgray;
     border-radius: 50%;
@@ -533,6 +596,9 @@ ul {
     position: relative;
     border: 1px solid;
     left: 10px;
+    display: grid;
+    align-items: center;
+    
   }
 
   .filter-text {
@@ -540,11 +606,11 @@ ul {
     align-items: left;
     margin-right: 0px;
     margin-bottom: 10px;
+    display: none;
   }
 
   .filter-button {
-    display: flex;
-    margin-top: 15px;
+    padding: 5px;
   }
 
   .filters-container span:hover {
@@ -774,9 +840,6 @@ ul {
     margin-left: 10px;
   }
 
-  /* <!-- Footer  --> */
-  .footer-container {
-  }
 
   .footer-col h4 {
     font-size: 14px;
