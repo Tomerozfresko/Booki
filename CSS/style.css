@@ -27,12 +27,12 @@ body {
 
 /* -----------------------Fonts--------------------------------- */
 
-h2 {
+.title {
   font-size: 16px;
   font-weight: bold;
 }
 
-h3 {
+.small {
   font-size: 14px;
   font-weight: bold;
 }
@@ -79,7 +79,7 @@ a {
 
 /* -----------------------Search--Bar--------------------------------- */
 
-.searchzone {
+.search-container {
   display: flex;
   margin-top: 10px;
 }
@@ -98,7 +98,7 @@ a {
   display: none;
 }
 
-.searchbutton {
+.pc-search-button {
   background-color: blue;
   color: white;
   padding: 5px;
@@ -107,7 +107,7 @@ a {
   border-style: none;
 }
 
-input {
+.input {
   padding: 5px;
   border: 1px solid lightgrey;
   border-right: none;
@@ -122,7 +122,7 @@ input {
 }
 
 /* -----------------------Title----------------- */
-.firsttitle {
+.title {
   margin-bottom: 6px;
 }
 
@@ -155,7 +155,6 @@ input {
 
 .filters-container input:checked ~ i {
   background-color: blue;
-  border: 2px solid white;
   color: white;
 }
 
@@ -189,19 +188,21 @@ input {
 
 /* -----------------------Quote----------------- */
 
-.quote-container {
+.alerte-container {
   display: flex;
   flex-wrap: nowrap;
   margin-bottom: 5px;
 }
 
-#quote {
+#alerte {
   padding: 5px;
 }
 
-#icon {
+.alerte-container i {
   padding: 5px;
+  background-color: white;
   color: #0065fc;
+  font-size: 24px;
 }
 /* -----------------------Main----------------- */
 main {
@@ -215,7 +216,7 @@ main {
   font-size: 10px;
 }
 
-main h2 {
+main p {
   margin: 20px 0px 20px 20px;
 }
 
@@ -264,10 +265,10 @@ main h2 {
 
 /* ----------------------- Most Popular----------------- */
 
-.Most-Popular {
+.most-Popular {
   display: flex;
   flex-direction: column;
-  background-color: #f2f2f2;
+  background-color: red;
   border-radius: 15px;
   width: 33%;
 }
