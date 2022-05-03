@@ -30,6 +30,7 @@ body {
 .title {
   font-size: 16px;
   font-weight: bold;
+  margin: 20px 20px 20px 20px;
 }
 
 .small {
@@ -122,10 +123,9 @@ a {
 }
 
 /* -----------------------Title----------------- */
-.title {
-  margin-bottom: 6px;
+#find {
+  margin: 10px 0px 10px 0px;
 }
-
 /* -----------------------Filters Zone----------------- */
 
 .filters-container {
@@ -216,10 +216,6 @@ main {
   font-size: 10px;
 }
 
-main p {
-  margin: 20px 0px 20px 20px;
-}
-
 /* --Accommodations in Marseille--------------- */
 
 .accommodations-in-marseille {
@@ -265,10 +261,10 @@ main p {
 
 /* ----------------------- Most Popular----------------- */
 
-.most-Popular {
+.most-popular {
   display: flex;
   flex-direction: column;
-  background-color: red;
+  background-color: #f2f2f2;
   border-radius: 15px;
   width: 33%;
 }
