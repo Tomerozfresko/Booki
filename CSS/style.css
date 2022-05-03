@@ -22,7 +22,7 @@ html {
 
 body {
   margin: auto;
-  max-width: 1300px;
+  max-width: 1250px;
 }
 
 /* -----------------------Fonts--------------------------------- */
@@ -236,8 +236,8 @@ main {
 }
 
 .accomodation {
-  width: 250px;
-  height: 220px;
+  width: 200px;
+  height: 180px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -255,7 +255,7 @@ main {
   margin: 1px;
   border-radius: 5px;
   width: 100%;
-  height: 150px;
+  height: 110px;
   /* border: 1px solid; */
 }
 
@@ -348,8 +348,7 @@ main {
 .Act-short-1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   object-fit: cover;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  border-radius: 5px;
   display: block;
 }
 
@@ -370,8 +369,7 @@ main {
 .Act-short-2 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   object-fit: cover;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  border-radius: 5px;
   display: block;
   width: 300px;
   height: 160px;
@@ -411,6 +409,7 @@ main {
   font-weight: 400px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+  margin-left: 20px;
 }
 
 .activity-title h3 {
