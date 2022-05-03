@@ -64,7 +64,7 @@ header {
   text-align: center;
 }
 
-.searchbutton {
+.pc-search-button {
   display: none;
 }
 
@@ -96,25 +96,18 @@ input {
   font-weight: 100;
 }
 
-/* -----------------------Title----------------- */
-.firsttitle {
-  margin-bottom: 10px;
-}
 /* -----------------------Filters Zone----------------- */
 
 .filters-container {
-  /* border: 5px solid; */
-
-  display: flex;
   flex-direction: row;
-
-  max-width: 300px;
-  margin: 10px auto;
-  justify-content: center;
-  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
 }
 
-.filters-container h5 {
+.filters-container label {
   margin-right: 0px;
   cursor: pointer;
   width: 90px;
@@ -122,12 +115,13 @@ input {
   padding: 0px 15px;
   text-align: center;
   border: 2px solid;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: none;
   overflow: hidden;
   display: grid;
   align-items: center;
+  border: 1px solid lightgrey;
 }
 
 .filters-container i {
@@ -135,14 +129,14 @@ input {
   padding: 5px 0px;
   border: 1px solid lightgray;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   background-color: #deebff;
   color: #0065fc;
   text-align: center;
   position: relative;
   border: 1px solid;
-  left: 10px;
+  left: 13px;
   display: grid;
   align-items: center;
 }
@@ -171,10 +165,9 @@ input {
 /* -----------------------Quote----------------- */
 
 /* -----------------------Cards Flex Zone----------------- */
-.cardszone {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.accommodations-in-marseille {
+  margin: 20px 20px;
+  width: 380px;
 }
 
 .starswrap {
@@ -188,17 +181,6 @@ input {
 }
 
 /* -----------------------Accommodations in Marseille----------------- */
-
-.accommodations-in-marseille {
-  background-color: #f2f2f2;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-self: flex-start;
-  margin-bottom: 20px;
-  width: 380px;
-}
 
 .accomodation-cards-container {
   margin: 5px;
@@ -235,12 +217,13 @@ input {
 
 /* ----------------------- Most Popular----------------- */
 
-.cardszoneright {
+.most-popular {
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
   border-radius: 15px;
   width: 380px;
+  margin: 20px 20px;
 }
 
 .accomright {
@@ -393,6 +376,13 @@ input {
   margin-top: 0px;
   font-weight: 400;
   text-align: center;
+}
+.footer-col {
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin : 10px;
 }
 
 .footer-col ul li {
