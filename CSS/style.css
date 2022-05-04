@@ -23,6 +23,8 @@ html {
 body {
   margin: auto;
   max-width: 1250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* -----------------------Fonts--------------------------------- */
@@ -35,7 +37,6 @@ body {
 
 .small {
   font-size: 14px;
-  font-weight: bold;
 }
 
 h4 {
@@ -61,7 +62,7 @@ a {
 }
 
 .logo {
-  height: 60px;
+  height: 40px;
 }
 
 .navlinks {
@@ -74,8 +75,9 @@ a {
 }
 
 .navlinks li a:hover {
-  padding-top: 10px;
+  padding-top: 15px;
   border-top: 2px solid blue;
+  color: #0065fc;
 }
 
 /* -----------------------Search--Bar--------------------------------- */
@@ -196,13 +198,19 @@ a {
 
 #alerte {
   padding: 5px;
+  font-weight: 100px;
 }
 
 .alerte-container i {
-  padding: 5px;
+  font-size: 16px;
+  padding: 5px 0px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
   background-color: white;
   color: #0065fc;
-  font-size: 24px;
+  text-align: center;
 }
 /* -----------------------Main----------------- */
 main {
@@ -259,6 +267,10 @@ main {
   /* border: 1px solid; */
 }
 
+#showmore {
+  color: black;
+}
+
 /* ----------------------- Most Popular----------------- */
 
 .most-popular {
@@ -280,8 +292,8 @@ main {
 .accomright {
   display: flex;
   flex-direction: row;
-  height: 150px;
-  width: 330px;
+  height: 120px;
+  width: 300px;
   border-radius: 5px;
   background-color: white;
   padding: 4px;
@@ -293,7 +305,7 @@ main {
 
 .accomright img {
   border-radius: 5px;
-  width: 200px;
+  width: 150px;
   height: 100%;
   object-fit: cover;
 }
@@ -304,7 +316,6 @@ main {
   justify-content: space-between;
   padding: 5px;
   max-height: 100%;
-  width: 30%;
 }
 
 /* <!-- Activities in Marseille  --> */
