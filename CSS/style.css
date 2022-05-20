@@ -27,12 +27,21 @@ body {
   margin-bottom: 20px;
 }
 
-/* -----------------------Fonts--------------------------------- */
-
-.title {
+/* -----------------------Fonts, Colors,Variables--------------------------------- */
+/* fonts */
+.h2 {
   font-size: 16px;
-  font-weight: bold;
-  margin: 20px 20px 20px 20px;
+}
+
+.h3 {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.h3--grey {
+  color: var(--main-gray);
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .small {
@@ -44,126 +53,150 @@ h4 {
   font-size: 12px;
 }
 
+label {
+}
+/* variables */
+
+:root {
+  --main-blue: #0065fc;
+  --bg-gray: hsl(0, 7%, 89%);
+  --main-gray: gray;
+  --main-white: white;
+  --main-black: black;
+}
+
 /* -----------------------Header--------------------------------- */
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5px;
 }
 
-li,
-a {
-  font-weight: 500;
-  font-size: 16px;
-  color: grey;
-  text-decoration: none;
-}
-
-.logo {
+.header__logo {
   height: 40px;
 }
 
-.navlinks {
-  list-style: none;
+.header__nav {
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.header__nav__link {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--main-gray);
+  text-decoration: none;
+  position: relative;
+  /* border: 1px solid; */
 }
 
-.navlinks li {
-  display: inline-block;
-  padding: 0px 20px;
+.header__nav__link:hover::after {
+  content: "";
+  height: 4px;
+  background-color: var(--main-blue);
+  position: absolute;
+  top: -1.2rem;
+  left: 0;
+  right: 0;
 }
-
-.navlinks li a:hover {
-  padding-top: 15px;
-  border-top: 2px solid blue;
-  color: #0065fc;
+/* -----------------------Titles--------------------------------- */
+.titles {
+  /* border: 1px solid; */
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
-
 /* -----------------------Search--Bar--------------------------------- */
 
-.search-container {
+.search {
   display: flex;
   margin-top: 10px;
+  /* border: 1px solid; */
+  max-width: 300px;
 }
 
-#pinicon {
-  background-color: #deebff;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  width: 30px;
-  color: black;
-  line-height: 30px;
+.search::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f3c5";
+  position: relative;
+  min-width: 40px;
+  background-color: var(--bg-gray);
   text-align: center;
+  line-height: 2.5rem;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
-#mobile-search-button {
+.search__button--mobile {
   display: none;
 }
 
-.pc-search-button {
-  background-color: blue;
-  color: white;
-  padding: 5px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+.search__button {
+  background-color: var(--main-blue);
+  color: var(--main-white);
+  padding: 10px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   border-style: none;
 }
 
-.input {
-  padding: 5px;
-  border: 1px solid lightgrey;
+.search__input {
+  border: 1px solid var(--bg-gray);
+  min-width: 120px;
   border-right: none;
   border-left: none;
+  padding-left: 10px;
 }
 
 ::placeholder {
-  color: grey;
-  font-size: 0.9em;
-  font-weight: 100;
-  font-size: small;
+  color: var(--main-black);
+  font-weight: 600;
+  font-size: 0.8rem;
 }
 
-/* -----------------------Title----------------- */
-.title--margin {
-  margin: 10px 0px 10px 0px;
-}
 /* -----------------------Filters Zone----------------- */
 
-.filters-container {
+.filters {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
   margin-bottom: 20px;
   flex-wrap: wrap;
+  gap: 0.4rem;
+  row-gap: 0.5rem;
+  /* max-width: 1000px; */
+  /* border: 1px solid; */
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.filters-container label {
-  font-size: 16px;
+.filter__label {
   font-weight: bold;
   padding: 5px 20px 5px 30px;
-  border: 1px solid lightgray;
+  border: 1px solid var(--bg-gray);
   border-left: none;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  margin-right: 90px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   cursor: pointer;
 }
 
-.filters-container span:hover {
+.filter__label:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
 
-.filters-container input:checked ~ i {
-  background-color: blue;
-  color: white;
+.filter__input:checked {
+  background-color: var(--main-blue);
+  color: var(--main-white);
 }
 
-.filters-container i {
-  font-size: 16px;
+.filter__icon {
   padding: 5px 0px;
-  border: 1px solid lightgray;
+  border: 1px solid var(--bg-gray);
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -171,76 +204,81 @@ a {
   color: #0065fc;
   text-align: center;
   position: relative;
-  left: 10px;
+  left: 15px;
 }
 
-.filter-text {
-  display: flex;
-  align-items: center;
-  margin-right: 50px;
-}
-
-.filter-button {
+.filter__button {
   display: flex;
   align-items: center;
 }
-.filters-container input {
+.filter__input {
   display: none;
 }
 
 /* -----------------------Quote----------------- */
 
-.alerte-container {
+.quote {
   display: flex;
   flex-wrap: nowrap;
   margin-bottom: 5px;
+  /* align-items; */
+  justify-content: flex-start;
+  /* border: 1px solid; */
 }
 
-#alerte {
-  padding: 5px;
-  font-weight: 100px;
+.quote__text {
+  /* padding: 10px; */
+  padding-bottom: 10px;
+  font-weight: 100;
+  color: var(--main-gray);
 }
 
-.alerte-container i {
-  font-size: 16px;
+.quote__icon {
+  font-size: 0.5rem;
   padding: 5px 0px;
-  border: 1px solid lightgray;
+  border: 1px solid var(--main-gray);
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  background-color: white;
-  color: #0065fc;
+  width: 20px;
+  height: 20px;
+  background-color: var(--main-white);
+  color: var(--main-blue);
   text-align: center;
+  margin-right: 5px;
 }
+
 /* -----------------------Main----------------- */
 main {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  /* border: 1px solid; */
+  /* min-width: 800px; */
 }
 
 .starswrap {
-  color: #0065fc;
+  color: var(--main-blue);
   font-size: 10px;
 }
 
 /* --Accommodations in Marseille--------------- */
 
 .accommodations-in-marseille {
+  display: flex;
   background-color: #f2f2f2;
   border-radius: 15px;
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 66%;
+  border: 1px solid blue;
 }
 
 .accomodation-cards-container {
-  margin: 5px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   flex-wrap: wrap;
+  padding: 10px;
+  border: 1px solid;
 }
 
 .accomodation {
@@ -250,7 +288,6 @@ main {
   display: flex;
   flex-direction: column;
   padding: 4px;
-  margin: 15px;
   border-radius: 5px;
   justify-content: space-between;
 }
@@ -482,5 +519,3 @@ ul {
   color: red;
   padding-left: 8px;
 }
-
-
