@@ -10,49 +10,51 @@
     <script src="https://kit.fontawesome.com/451d3ef7a2.js" crossorigin="anonymous"></script></head>
     <body>    
         <div class="out">
-            <header class="header flex--row">
-                <img class="header__logo" src="Images\images\logo\Booki.png" alt="Booki Logo">
-                <nav class="header__nav flex--row">
-                    <a class="header__nav__link" href="#">Accommodations</a>
-                    <a class="header__nav__link"  href="#">Activities</a>
-                </nav>
-            </header>
-            <div class="introduction flex--col">
-                <p class="title title--nopadding"> Find a place for your dream vacation</p>
-                <p class="title--light">Downtown or in nature</p>
-            </div>
-            <form class="search flex--row">
-                <input class="search__input" type="text" placeholder="Marseille,France">
-                <button class="search__button">Search</button>
-            </form>
-            <div class="filters flex--row">
-                <p class="filters__title">Filters</p>
-                <div class="filters__container flex--row">
-                    <div class="filter__button">
-                        <input class ="filter__input" type="checkbox" id="lowcost">
-                        <i class="filter__icon fa-solid fa-money-bill-wave"></i>
-                        <label class="filter__label" for="lowcost">Low Cost</label>
-                    </div>
-                    <div class="filter__button">
-                        <input class ="filter__input" type="checkbox" id="family">
-                        <i class="filter__icon fa-solid fa-person"></i>
-                        <label class="filter__label" for="family">Family-friendly</label>
-                    </div>
-                    <div class="filter__button">
-                        <input class ="filter__input" type="checkbox" id="romantic">
-                        <i class="filter__icon fa-solid fa-heart"></i>
-                        <label class="filter__label" for="romantic">Romantic</label>
-                    </div>
-                    <div class="filter__button">
-                        <input class ="filter__input" type="checkbox" id="pets">
-                        <i class="filter__icon fa-solid fa-dog"></i>
-                        <label class="filter__label" for="pets" >Pets allowed</label>
+            <div class="upper">
+                <header class="header flex--row">
+                    <img class="header__logo" src="Images\images\logo\Booki.png" alt="Booki Logo">
+                    <nav class="header__nav flex--row">
+                        <a class="header__nav__link" href="#">Accommodations</a>
+                        <a class="header__nav__link"  href="#">Activities</a>
+                    </nav>
+                </header>
+                <div class="introduction flex--col">
+                    <p class="title title--nopadding"> Find a place for your dream vacation</p>
+                    <p class="title--light">Downtown or in nature</p>
+                </div>
+                <form class="search flex--row">
+                    <input class="search__input" type="text" placeholder="Marseille,France">
+                    <button class="search__button">Search</button>
+                </form>
+                <div class="filters flex--row">
+                    <p class="filters__title">Filters</p>
+                    <div class="filters__container flex--row">
+                        <div class="filter__button">
+                            <input class ="filter__input" type="checkbox" id="lowcost">
+                            <i class="filter__icon fa-solid fa-money-bill-wave"></i>
+                            <label class="filter__label" for="lowcost">Low Cost</label>
+                        </div>
+                        <div class="filter__button">
+                            <input class ="filter__input" type="checkbox" id="family">
+                            <i class="filter__icon fa-solid fa-person"></i>
+                            <label class="filter__label" for="family">Family-friendly</label>
+                        </div>
+                        <div class="filter__button">
+                            <input class ="filter__input" type="checkbox" id="romantic">
+                            <i class="filter__icon fa-solid fa-heart"></i>
+                            <label class="filter__label" for="romantic">Romantic</label>
+                        </div>
+                        <div class="filter__button">
+                            <input class ="filter__input" type="checkbox" id="pets">
+                            <i class="filter__icon fa-solid fa-dog"></i>
+                            <label class="filter__label" for="pets" >Pets allowed</label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="quote flex--row">
-                <i class="quote__icon fa-solid fa-info"></i>
-                <span class ="quote__text">More then 500 Accommodations are availaible in this city</span>
+                <div class="quote flex--row">
+                    <i class="quote__icon fa-solid fa-info"></i>
+                    <span class ="quote__text">More then 500 Accommodations are availaible in this city</span>
+                </div>
             </div>
             <main class="main flex--row">
                 <div class="accomodtations flex--col">
@@ -165,10 +167,10 @@
                     <div class="cards__container--mostpopular flex--col">
                         
                         <div class="card--most">
-                                <div class="img__container--most">
-                                    <img class="card__img--most" src="Images/images/hebergements/4_small/MorningSun.jpg"
-                                    alt="Morning Sun Hotel">
-                                </div>
+                            <div class="img__container--most">
+                                <img class="card__img--most" src="Images/images/hebergements/4_small/MorningSun.jpg"
+                                alt="Morning Sun Hotel">
+                            </div>
                             <div class="card__body--most flex--col">
                                 <p class="card__header">Morning Sun Hotel</p>
                                 <p class="card__footer">Night starting at 128€</p>
@@ -218,40 +220,62 @@
                     </div>
                 </div>
             </main>
-            <p class="title title--activities">Activities in Marseille</p>
-            <div class="activities_container flex--row">
-                
-                <div class="activity">
-                    <img class="activity__img activity__img--long" src="Images/images/activites/3_medium/OldPort.jpg" alt="Old Port">
-                    <p class="card__header">Old Port</p>
+            <div>
+                <p class="title title--activities">Activities in Marseille</p>
+
+                <div class="activities__container flex--row">
+                    <div class="activity__col">
+                        
+                        <div class="activity">
+                            <img class="activity__img" src="Images/images/activites/3_medium/OldPort.jpg" alt="Old Port">                            
+                            <div class="activity__header">
+                                <p>Old Port</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="activity__col">
+                        <div class="activity">
+                            <img class="activity__img" src="Images/images/activites/3_medium/PomegeuesFort.jpg" alt="Pomégues Fort">                            
+                            <div class="activity__header">
+                                <p>Pomégues Fort</p>
+                            </div>
+                        </div>
+                        <div class="activity">
+                            <img class="activity__img" src="Images/images/activites/3_medium/FrioulIsland.jpg" alt="Frioul Island">                            
+                            <div class="activity__header">
+                                <p>Frioul Island</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity__col">
+                        <div class="activity">
+                            <img class="activity__img" src="Images/images/activites/3_medium/calanques.jpg" alt="Calanques National Park">                            
+                            <div class="activity__header">
+                                <p>Calanques National Park</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity__col">
+                        <div class="activity">
+                            <img class="activity__img" src="Images/images/activites/3_medium/NotreDameDeLaGare.jpg" alt="Notre-Dame-de-La-Gare">                            
+                            <div class="activity__header">
+                                <p>Notre-Dame-de-La-Gare</p>
+                            </div>
+                        </div>
+                        <div class="activity">
+                            <img class="activity__img" src="Images/images/activites/3_medium/LongChampsPArk.jpg" alt="Longchamp Park">                            
+                            <div class="activity__header">
+                                <p>Longchamp Park</p>
+                            </div>
+                        </div>
                 </div>
-                
-                <div class="activity--short flex--col">
-                    <div class="activity__wrapper">
-                        <img class="activity__img short-image-1" src="Images/images/activites/3_medium/PomegeuesFort.jpg" alt="Pomégues Fort">
-                        <p class="card__header">Pomégues Fort</p>
-                    </div>
-                    <div class="activity__wrapper">
-                        <img class="short-image-2" src="Images/images/activites/3_medium/FrioulIsland.jpg" alt="Frioul Island">
-                        <p class="card__header">Frioul Island</p>
-                    </div>
-                </div>
-                <div class="activity">
-                    <img class="activity__img activity__img--long " src="Images/images/activites/3_medium/calanques.jpg" alt="Avatar">
-                    <p class="card__header">Calanques National Park</p>
-                </div>
-                <div class="activity--short flex--col">
-                    <div class="activity__wrapper">
-                        <img class="activity__img short-image-2" src="Images/images/activites/3_medium/NotreDameDeLaGare.jpg" alt="Notre-Dame-de-La-Gare">
-                        <p class="card__header">Notre-Dame-de-La-Gare</p>
-                    </div>
-                    <div class="activity__wrapper">
-                        <img class="short-image-1" src="Images/images/activites/3_medium/LongChampsPArk.jpg" alt="Longchamp Park">
-                        <p class="card__header">Longchamp Park</p>
-                    </div>
+                    
                 </div>
             </div>
         </div>
+        
+        
         <footer class="footer">
             <div class="footer-container">
                 <div class="row">
@@ -278,8 +302,9 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        </footer>
-    </body>
-    </html>
-    
+            </footer>
+            
+        </body>
+        
+        </html>
+        
