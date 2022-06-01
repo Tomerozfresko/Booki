@@ -18,7 +18,8 @@ html {
 
 body {
   font-family: "Raleway", sans-serif;
-  margin: auto;
+  margin: 10px;
+  position: relative;
 }
 
 .out {
@@ -396,20 +397,20 @@ body {
 /* <!-- Activities in Marseille  --> */
 
 .activities__container {
-  /* border: 1px solid; */
-  height: 400px;
   justify-content: space-between;
   margin-bottom: 50px;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .activity__col {
-  width: 23%;
-  height: 100%;
+  width: 300px;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  flex: 1 1 200px;
 }
 
 .activity {
@@ -457,8 +458,6 @@ body {
   padding: 15px 0 15px 20px;
 }
 
-
-
 .activity:hover {
   box-shadow: 0 8px 1rem 0 rgba(0, 0, 0, 0.2);
 }
@@ -482,6 +481,8 @@ ul {
 .footer {
   background-color: #f2f2f2;
   width: 100vw;
+  position: relative;
+  left: -10px;
 }
 
 .footer-col {
@@ -531,6 +532,10 @@ ul {
     width: 95vw;
     margin: auto;
   }
+  .activities__container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
 
 /* tablet */
@@ -556,10 +561,6 @@ ul {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
   }
-
-  body {
-    background-color: bisque;
-  }
   .upper {
     width: 95vw;
     margin: auto;
@@ -568,11 +569,7 @@ ul {
     padding-top: 10px;
   }
 
-  .activity--short {
-    justify-content: center;
-    gap: 1rem;
-  }
-  .activities_container {
+  .activities__container {
     margin-bottom: 50px;
     justify-content: center;
     flex-wrap: wrap;
@@ -581,9 +578,6 @@ ul {
   /* mobile */
 
   @media screen and (max-width: 414px) {
-    body {
-      background-color: lightgreen;
-    }
     .card--most {
       min-width: 200px;
     }
@@ -594,10 +588,16 @@ ul {
     .activities_container {
       justify-content: center;
     }
+
+    .activity {
+      height: 100px;
+    }
   }
+
   .activity--short {
     gap: 1rem;
   }
+
   .activities_container {
     gap: 1rem;
   }
