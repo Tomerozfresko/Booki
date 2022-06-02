@@ -111,14 +111,8 @@ body {
   position: relative;
 }
 
-.header__nav__link:hover::after {
-  content: "";
-  height: 4px;
-  background-color: var(--main-blue);
-  position: absolute;
-  top: -1.2rem;
-  left: 0;
-  right: 0;
+.header__nav__link:hover {
+  border-bottom: 1px solid var(--main-blue);
 }
 
 .header__nav__link:hover {
@@ -472,6 +466,7 @@ body {
 .row {
   display: flex;
   text-align: justify;
+  flex-wrap: wrap;
 }
 
 ul {
@@ -593,9 +588,29 @@ ul {
   .activity {
     height: 200px;
   }
+  .header {
+    justify-content: center;
+  }
+  .header__nav {
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 80px;
+    gap: 0px;
+  }
 
-  .header__nav__link:hover::after {
-    top: 1.8rem;
+  .header__nav__link {
+    width: 50%;
+    padding: 15px 15px 0px 15px;
+    border-bottom: 2px solid rgb(234, 230, 230);
+  }
+  .header__nav__link:hover {
+    border-bottom: 1px solid var(--main-blue);
+  }
+  .introduction {
+    margin-top: 60px;
+  }
+  .search {
+    justify-content: center;
   }
   .activity__col {
     width: 300px;
@@ -627,12 +642,13 @@ ul {
   gap: 1rem;
 }
 .footer-col ul li a {
-  font-size: 8px;
+  font-size: 14px;
   padding: 0px;
 }
 .footer-col {
   padding: 0px;
 }
 .footer-col {
-  font-size: 8px;
+  font-size: 16px;
+  min-width: 150px;
 }
