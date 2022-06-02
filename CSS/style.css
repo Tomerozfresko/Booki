@@ -222,8 +222,8 @@ body {
   background-color: #deebff;
   color: var(--main-blue);
   position: relative;
-  left: 15px;
-  display: flex;
+  left: 20px;
+  display: flex !important;
   justify-content: center;
   align-items: center;
 }
@@ -307,7 +307,7 @@ body {
 }
 
 .card__header {
-  padding: 10px 0px 10px 5px;
+  padding: 3px 5px 0px 5px;
 }
 .card__footer {
   padding: 0px 0px 5px 5px;
@@ -323,6 +323,7 @@ body {
   background-color: var(--bg-gray);
   border-radius: 10px;
   padding: 20px;
+  width: fit-content;
 }
 
 .title--heart {
@@ -471,7 +472,6 @@ body {
 .row {
   display: flex;
   text-align: justify;
-  text-justify: distribute;
 }
 
 ul {
@@ -574,41 +574,65 @@ ul {
     justify-content: center;
     flex-wrap: wrap;
   }
+}
 
-  /* mobile */
+/* mobile */
 
-  @media screen and (max-width: 414px) {
-    .card--most {
-      min-width: 200px;
-    }
-    .card--accomodations {
-      flex-direction: column;
-      min-width: 300px;
-    }
-    .activities_container {
-      justify-content: center;
-    }
-
-    .activity {
-      height: 100px;
-    }
+@media screen and (max-width: 414px) {
+  .card--most {
+    min-width: 200px;
   }
-
-  .activity--short {
-    gap: 1rem;
+  .card--accomodations {
+    flex-direction: column;
+    min-width: 225px;
   }
-
   .activities_container {
-    gap: 1rem;
+    justify-content: center;
   }
-  .footer-col ul li a {
-    font-size: 8px;
-    padding: 0px;
+
+  .activity {
+    height: 200px;
   }
-  .footer-col {
-    padding: 0px;
+
+  .header__nav__link:hover::after {
+    top: 1.8rem;
   }
-  .footer-col {
-    font-size: 8px;
+  .activity__col {
+    width: 300px;
+    height: fit-content;
   }
+
+  .activity__col:nth-child(odd) .activity:nth-child(1) {
+    height: 200px;
+  }
+
+  .activity__col:nth-child(2) .activity:nth-child(1) {
+    height: 200px;
+    margin-bottom: 1rem;
+  }
+  .activity__col:nth-child(2) .activity:nth-child(2) {
+    height: 200px;
+  }
+
+  .activity__col:nth-child(4) .activity:nth-child(1) {
+    height: 200px;
+    margin-bottom: 1rem;
+  }
+  .activity__col:nth-child(4) .activity:nth-child(2) {
+    height: 200px;
+  }
+}
+
+.activities_container {
+  gap: 1rem;
+}
+.footer-col ul li a {
+  font-size: 8px;
+  padding: 0px;
+}
+.footer-col {
+  padding: 0px;
+}
+.footer-col {
+  font-size: 8px;
 }
