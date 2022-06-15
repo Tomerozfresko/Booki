@@ -500,13 +500,13 @@ ul {
 }
 
 .footer-col {
-  width: 25%;
+  /* width: 25%; */
   padding: 0 15px;
   margin-left: 60px;
 }
 
 .footer-col--about {
-  margin-left: 0px;
+  margin-left: 5px;
 }
 
 .footer-col h4 {
@@ -592,6 +592,10 @@ ul {
     justify-content: center;
     flex-wrap: wrap;
   }
+
+  .row {
+    flex-direction: column;
+  }
 }
 
 /* mobile */
@@ -669,7 +673,7 @@ ul {
   padding: 0px;
 }
 .footer-col {
-  padding: 0px;
+  margin-left: 5px;
 }
 .footer-col {
   font-size: 16px;
