@@ -112,7 +112,8 @@ body {
 }
 
 .header__nav__link:hover {
-  border-bottom: 1px solid var(--main-blue);
+  border-top: 1px solid var(--main-blue);
+  padding-top: 3px;
 }
 
 .header__nav__link:hover {
@@ -258,8 +259,13 @@ body {
 .accomodtations {
   flex: 3 2;
   background-color: var(--bg-gray);
-  border-radius: 10px;
+  border-radius: 30px;
   padding: 20px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: var(--main-black);
 }
 
 .cards__container--accomodations {
@@ -278,8 +284,16 @@ body {
   border-radius: 10px;
   overflow: hidden;
   max-height: 200px;
-
   margin: 15px;
+  position: relative;
+}
+
+.card__link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .card:hover {
@@ -315,13 +329,14 @@ body {
 .mostpopular {
   flex: 1;
   background-color: var(--bg-gray);
-  border-radius: 10px;
+  border-radius: 30px;
   padding: 20px;
   width: fit-content;
 }
 
 .title--heart {
   position: relative;
+  margin-bottom: 1rem;
 }
 
 .title--heart:after {
@@ -342,6 +357,7 @@ body {
   overflow: hidden;
   min-height: 100px;
   width: 100%;
+  position: relative;
 }
 .img__container {
   flex: 3 1 auto;
@@ -366,8 +382,9 @@ body {
 
 .cards__container--mostpopular {
   align-content: flex-start;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1rem;
+  height: 75%;
 }
 
 .img__container--most {
@@ -467,6 +484,8 @@ body {
   display: flex;
   text-align: justify;
   flex-wrap: wrap;
+  max-width: 1300px;
+  margin: auto;
 }
 
 ul {
@@ -483,7 +502,11 @@ ul {
 .footer-col {
   width: 25%;
   padding: 0 15px;
-  margin-left: 20px;
+  margin-left: 60px;
+}
+
+.footer-col--about {
+  margin-left: 0px;
 }
 
 .footer-col h4 {
