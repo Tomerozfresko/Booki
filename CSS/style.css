@@ -105,7 +105,11 @@ body {
   justify-content: space-between;
   gap: 1rem;
 }
+
 .header__nav__link {
+  border-top: 1px solid transparent; /* add transparent border */
+  padding-top: 3px;
+  display: block;
   color: var(--main-gray);
   text-decoration: none;
   position: relative;
